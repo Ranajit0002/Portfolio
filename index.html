@@ -51,7 +51,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
             <!-- LEFT COLUMN: Sticky Sidebar Profile & Navigation -->
-            <aside class="lg:col-span-3 lg:sticky lg:top-8 space-y-6 animate__animated">
+            <aside class="lg:col-span-2 lg:sticky lg:top-8 space-y-6 animate__animated">
                 <div
                     class="border border-brand-border rounded-2xl shadow-xl text-center flex flex-col items-center overflow-hidden">
 
@@ -59,42 +59,42 @@
                     <div class="w-full mb-5">
                         <div class="grid grid-cols-12 gap-2 rounded-2xl">
 
-                            <!-- Main Large Profile Image (8 columns) -->
-                            <div class="col-span-8 relative group overflow-hidden rounded-xl">
+                            <!-- Main Large Profile Image -->
+                            <div class="col-span-12 relative group overflow-hidden">
                                 <div class="relative w-full h-52 sm:h-56 overflow-hidden">
                                     <img src="./assets/images/photo.png" alt="Ranajit Hazra" loading="lazy"
-                                        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                                        class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
                                     <!-- Bottom subtle gradient blend -->
                                     <div
-                                        class="absolute inset-0 bg-gradient-to-t from-brand-card/70 via-transparent to-transparent opacity-60">
+                                        class="absolute inset-0 bg-transparent">
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Secondary Stacked Images (4 columns) -->
-                            <div class="col-span-4 flex flex-col gap-2">
+                            <!-- Secondary Stacked Images -->
+                            <!-- <div class="col-span-4 flex flex-col gap-2"> -->
 
-                                <!-- Secondary Image 1 (Workspace / Secondary Photo) -->
-                                <div class="relative group overflow-hidden rounded-xl flex-1">
+                                <!-- Secondary Image 1 -->
+                                <!-- <div class="relative group overflow-hidden rounded-xl flex-1">
                                     <img src="./assets/images/workspace.png" alt="Workspace / Secondary Photo"
                                         loading="lazy"
                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                                     <div
                                         class="absolute inset-0 group-hover:bg-transparent transition-colors duration-200">
                                     </div>
-                                </div>
+                                </div> -->
 
-                                <!-- Secondary Image 2 (Tech / Banner Graphics) -->
-                                <div class="relative group overflow-hidden rounded-xl flex-1">
+                                <!-- Secondary Image 2 -->
+                                <!-- <div class="relative group overflow-hidden rounded-xl flex-1">
                                     <img src="./assets/images/code-preview.png" alt="Code Preview / Banner"
                                         loading="lazy"
                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                                     <div
                                         class="absolute inset-0 group-hover:bg-transparent transition-colors duration-200">
                                     </div>
-                                </div>
+                                </div> -->
 
-                            </div>
+                            <!-- </div> -->
 
                         </div>
                     </div>
@@ -263,7 +263,7 @@
             </aside>
 
             <!-- RIGHT COLUMN: Page Sections -->
-            <main class="lg:col-span-9 space-y-6 animate__animated animate__slideInDown">
+            <main class="lg:col-span-10 space-y-6 animate__animated animate__slideInDown">
 
                 <!-- ABOUT SECTION -->
                 <section id="about-section" class="">
@@ -301,16 +301,16 @@
 
                     <!-- Timeline Wrapper Container -->
                     <div class="space-y-4">
-                        <!-- Experience Card 1: Webskitters Academy -->
+                        <!-- Experience Card 1: Webskitters -->
                         <div class="grid grid-cols-1 gap-4 group">
                             <!-- Content Card -->
                             <div
                                 class="bg-brand-bg/60 border border-brand-border/70 rounded-xl p-5 hover:border-indigo-500/50 transition-colors duration-300">
                                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
                                     <h3 class="font-bold text-white text-base">Web Development Trainee</h3>
-                                    <span class="text-xs font-medium">2025</span>
+                                    <span class="text-xs font-medium">2025 - Present</span>
                                 </div>
-                                <p class="text-xs text-gray-400 mb-3">Webskitters Academy, India</p>
+                                <p class="text-xs text-gray-400 mb-3">Webskitters, India</p>
 
                                 <ul class="text-xs text-gray-300 space-y-2 pt-2 border-t border-brand-border/40">
                                     <li class="flex items-start gap-2">
@@ -333,7 +333,7 @@
                                 class="bg-brand-bg/60 border border-brand-border/70 rounded-xl p-5 hover:border-indigo-500/50 transition-colors duration-300">
                                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
                                     <h3 class="font-bold text-white text-base">AI Data Annotator / HITL Specialist</h3>
-                                    <span class="text-xs font-medium">2024 (Contract)</span>
+                                    <span class="text-xs font-medium">2024 (Freelance)</span>
                                 </div>
                                 <p class="text-xs text-gray-400 mb-3">Frinksyn AI, India</p>
 
@@ -369,7 +369,7 @@
                                 class="bg-brand-bg/60 border border-brand-border/70 rounded-xl p-5 hover:border-indigo-500/50 transition-colors duration-300">
                                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
                                     <h3 class="font-bold text-white text-base">Data Entry Operator</h3>
-                                    <span class="text-xs font-medium">2022 (Contract)</span>
+                                    <span class="text-xs font-medium">2022 (Freelance)</span>
                                 </div>
                                 <p class="text-xs text-gray-400 mb-3">Anakin Company, India</p>
 
@@ -1036,11 +1036,21 @@
 
                             <div>
                                 <div class="flex justify-between text-gray-300 mb-1">
-                                    <span>Figma / Photoshop to HTML</span>
-                                    <span class="text-emerald-400 font-medium">95%</span>
+                                    <span>Figma to HTML</span>
+                                    <span class="text-emerald-400 font-medium">100%</span>
                                 </div>
                                 <div class="w-full bg-gray-800 rounded-full h-2">
-                                    <div class="bg-emerald-500 h-2 rounded-full" style="width: 95%"></div>
+                                    <div class="bg-emerald-500 h-2 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-gray-300 mb-1">
+                                    <span>Photoshop to HTML</span>
+                                    <span class="text-emerald-400 font-medium">100%</span>
+                                </div>
+                                <div class="w-full bg-gray-800 rounded-full h-2">
+                                    <div class="bg-emerald-500 h-2 rounded-full" style="width: 100%"></div>
                                 </div>
                             </div>
 
@@ -1054,15 +1064,16 @@
                                 </div>
                             </div>
 
-                            <div>
+                            <!-- <div>
                                 <div class="flex justify-between text-gray-300 mb-1">
-                                    <span>Vite, Flowbite & AJAX</span>
+                                    <span>Flowbite & AJAX</span>
                                     <span class="text-emerald-400 font-medium">85%</span>
                                 </div>
                                 <div class="w-full bg-gray-800 rounded-full h-2">
                                     <div class="bg-emerald-500 h-2 rounded-full" style="width: 85%"></div>
                                 </div>
-                            </div>
+                            </div> -->
+
                         </div>
 
                         <!-- Language Proficiency Bar Chart -->
