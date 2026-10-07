@@ -53,28 +53,30 @@
             <!-- LEFT COLUMN: Sticky Sidebar Profile & Navigation -->
             <aside class="lg:col-span-3 lg:sticky lg:top-8 space-y-6">
                 <div
-                    class="border border-brand-border rounded-2xl shadow-xl text-center flex flex-col items-center overflow-hidden">
+                    class="border border-brand-border rounded-2xl text-center flex flex-col items-center overflow-hidden relative p-[1px] before:absolute before:inset-[-200%] before:bg-[conic-gradient(from_0deg,#0f172a,#2563eb,#3b82f6,#60a5fa,#94a3b8,#1e3a8a,#0f172a)] before:animate-[spin_20s_linear_infinite]">
+                    <div
+                        class="w-full h-full bg-brand-bg rounded-[calc(1rem-1px)] text-center flex flex-col items-center overflow-hidden relative z-10">
 
-                    <!-- Profile Image -->
-                    <div class="w-full mb-5">
-                        <div class="grid grid-cols-12 gap-2 rounded-2xl">
+                        <!-- Profile Image -->
+                        <div class="w-full mb-5">
+                            <div class="grid grid-cols-12 gap-2 rounded-2xl">
 
-                            <!-- Main Large Profile Image -->
-                            <div class="col-span-12 relative group overflow-hidden">
-                                <div class="relative w-full h-52 sm:h-56 overflow-hidden">
-                                    <img src="./assets/images/photo.png" alt="Ranajit Hazra" loading="lazy"
-                                        class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
-                                    <!-- Bottom subtle gradient blend -->
-                                    <div class="absolute inset-0 bg-transparent">
+                                <!-- Main Large Profile Image -->
+                                <div class="col-span-12 relative group overflow-hidden">
+                                    <div class="relative w-full h-52 sm:h-56 overflow-hidden">
+                                        <img src="./assets/images/photo.png" alt="Ranajit Hazra" loading="lazy"
+                                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                                        <!-- Bottom subtle gradient blend -->
+                                        <div class="absolute inset-0 bg-transparent">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Secondary Stacked Images -->
-                            <!-- <div class="col-span-4 flex flex-col gap-2"> -->
+                                <!-- Secondary Stacked Images -->
+                                <!-- <div class="col-span-4 flex flex-col gap-2"> -->
 
-                            <!-- Secondary Image 1 -->
-                            <!-- <div class="relative group overflow-hidden flex-1">
+                                <!-- Secondary Image 1 -->
+                                <!-- <div class="relative group overflow-hidden flex-1">
                                     <img src="./assets/images/workspace.png" alt="Workspace / Secondary Photo"
                                         loading="lazy"
                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -83,8 +85,8 @@
                                     </div>
                                 </div> -->
 
-                            <!-- Secondary Image 2 -->
-                            <!-- <div class="relative group overflow-hidden flex-1">
+                                <!-- Secondary Image 2 -->
+                                <!-- <div class="relative group overflow-hidden flex-1">
                                     <img src="./assets/images/code-preview.png" alt="Code Preview / Banner"
                                         loading="lazy"
                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -93,171 +95,174 @@
                                     </div>
                                 </div> -->
 
-                            <!-- </div> -->
+                                <!-- </div> -->
 
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Name & Title -->
-                    <div class="w-full">
-                        <h1 class="text-2xl font-bold tracking-tight text-white mb-1 animate__animated animate__pulse">
-                            Ranajit Hazra</h1>
-                        <p class="text-sm font-medium">Full-Stack Web Developer (PHP Laravel &amp;
-                            Frontend)</p>
+                        <!-- Name & Title -->
+                        <div class="w-full">
+                            <h1
+                                class="text-2xl font-bold tracking-tight text-white mb-1 animate__animated animate__pulse">
+                                Ranajit Hazra</h1>
+                            <p class="text-sm font-medium">Full-Stack Web Developer (PHP Laravel &amp;
+                                Frontend)</p>
 
-                        <!-- Location & Work Preferences -->
-                        <p class="text-xs mb-3">
-                            Kolkata, West Bengal, India<br>
-                            <span class="">(Open to Remote, Relocate, Hybrid, On-Site)</span>
-                        </p>
-                    </div>
+                            <!-- Location & Work Preferences -->
+                            <p class="text-xs mb-3">
+                                Kolkata, West Bengal, India<br>
+                                <span class="">(Open to Remote, Relocate, Hybrid, On-Site)</span>
+                            </p>
+                        </div>
 
-                    <!-- Navigation Links with Direct Section IDs -->
-                    <nav
-                        class="w-full text-sm font-medium border-t border-brand-border/60 divide-y divide-brand-border/40">
-                        <!-- About -->
-                        <a href="#about-section"
-                            class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
-                            <span class="flex items-center gap-3 min-w-0">
-                                <span class="w-7 h-7 flex items-center justify-center text-xs
+                        <!-- Navigation Links with Direct Section IDs -->
+                        <nav
+                            class="w-full text-sm font-medium border-t border-brand-border/60 divide-y divide-brand-border/40">
+                            <!-- About -->
+                            <a href="#about-section"
+                                class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
+                                <span class="flex items-center gap-3 min-w-0">
+                                    <span class="w-7 h-7 flex items-center justify-center text-xs
                                     group-hover:scale-105 transition-all duration-200 flex-shrink-0">
-                                    <i class="fa-solid fa-user"></i>
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    <span class="truncate">About</span>
                                 </span>
-                                <span class="truncate">About</span>
-                            </span>
-                            <i
-                                class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
-                        </a>
+                                <i
+                                    class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
+                            </a>
 
-                        <!-- Work Experience -->
-                        <a href="#experience-section"
-                            class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
-                            <span class="flex items-center gap-3 min-w-0">
-                                <span class="w-7 h-7 flex items-center justify-center text-xs
+                            <!-- Work Experience -->
+                            <a href="#experience-section"
+                                class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
+                                <span class="flex items-center gap-3 min-w-0">
+                                    <span class="w-7 h-7 flex items-center justify-center text-xs
                                     group-hover:scale-105 transition-all duration-200 flex-shrink-0">
-                                    <i class="fa-solid fa-briefcase"></i>
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </span>
+                                    <span class="truncate">Work Experience</span>
                                 </span>
-                                <span class="truncate">Work Experience</span>
-                            </span>
-                            <i
-                                class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
-                        </a>
+                                <i
+                                    class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
+                            </a>
 
-                        <!-- Projects -->
-                        <a href="#projects-section"
-                            class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
-                            <span class="flex items-center gap-3 min-w-0">
-                                <span class="w-7 h-7 flex items-center justify-center text-xs
+                            <!-- Projects -->
+                            <a href="#projects-section"
+                                class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
+                                <span class="flex items-center gap-3 min-w-0">
+                                    <span class="w-7 h-7 flex items-center justify-center text-xs
                                     group-hover:scale-105 transition-all duration-200 flex-shrink-0">
-                                    <i class="fa-solid fa-code"></i>
+                                        <i class="fa-solid fa-code"></i>
+                                    </span>
+                                    <span class="truncate">Projects</span>
                                 </span>
-                                <span class="truncate">Projects</span>
-                            </span>
-                            <i
-                                class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
-                        </a>
+                                <i
+                                    class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
+                            </a>
 
-                        <!-- Skills & Tools -->
-                        <a href="#skills-section"
-                            class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
-                            <span class="flex items-center gap-3 min-w-0">
-                                <span class="w-7 h-7 flex items-center justify-center text-xs
+                            <!-- Skills & Tools -->
+                            <a href="#skills-section"
+                                class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
+                                <span class="flex items-center gap-3 min-w-0">
+                                    <span class="w-7 h-7 flex items-center justify-center text-xs
                                     group-hover:scale-105 transition-all duration-200 flex-shrink-0">
-                                    <i class="fa-solid fa-microchip"></i>
+                                        <i class="fa-solid fa-microchip"></i>
+                                    </span>
+                                    <span class="truncate">Skills &amp; Tools</span>
                                 </span>
-                                <span class="truncate">Skills &amp; Tools</span>
-                            </span>
-                            <i
-                                class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
-                        </a>
+                                <i
+                                    class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
+                            </a>
 
-                        <!-- Education & Training -->
-                        <a href="#education-section"
-                            class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
-                            <span class="flex items-center gap-3 min-w-0">
-                                <span class="w-7 h-7 flex items-center justify-center text-xs
+                            <!-- Education & Training -->
+                            <a href="#education-section"
+                                class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
+                                <span class="flex items-center gap-3 min-w-0">
+                                    <span class="w-7 h-7 flex items-center justify-center text-xs
                                     group-hover:scale-105 transition-all duration-200 flex-shrink-0">
-                                    <i class="fa-solid fa-graduation-cap"></i>
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </span>
+                                    <span class="truncate">Education &amp; Training</span>
                                 </span>
-                                <span class="truncate">Education &amp; Training</span>
-                            </span>
-                            <i
-                                class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
-                        </a>
+                                <i
+                                    class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
+                            </a>
 
-                        <!-- Certifications & Achievements -->
-                        <a href="#certifications-section"
-                            class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
-                            <span class="flex items-center gap-3 min-w-0">
-                                <span class="w-7 h-7 flex items-center justify-center text-xs
+                            <!-- Certifications & Achievements -->
+                            <a href="#certifications-section"
+                                class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
+                                <span class="flex items-center gap-3 min-w-0">
+                                    <span class="w-7 h-7 flex items-center justify-center text-xs
                                     group-hover:scale-105 transition-all duration-200 flex-shrink-0">
-                                    <i class="fa-solid fa-award"></i>
+                                        <i class="fa-solid fa-award"></i>
+                                    </span>
+                                    <span class="truncate">Certifications &amp; Achievements</span>
                                 </span>
-                                <span class="truncate">Certifications &amp; Achievements</span>
-                            </span>
-                            <i
-                                class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
-                        </a>
+                                <i
+                                    class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
+                            </a>
 
-                        <!-- Get in Touch -->
-                        <a href="#contact-section"
-                            class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
-                            <span class="flex items-center gap-3 min-w-0">
-                                <span class="w-7 h-7 flex items-center justify-center text-xs
+                            <!-- Get in Touch -->
+                            <a href="#contact-section"
+                                class="w-full flex items-center justify-between px-5 py-2 text-gray-300 hover:text-white hover:bg-brand-border/30 transition-all duration-200 group">
+                                <span class="flex items-center gap-3 min-w-0">
+                                    <span class="w-7 h-7 flex items-center justify-center text-xs
                                     group-hover:scale-105 transition-all duration-200 flex-shrink-0">
-                                    <i class="fa-solid fa-handshake"></i>
+                                        <i class="fa-solid fa-handshake"></i>
+                                    </span>
+                                    <span class="truncate">Get in Touch</span>
                                 </span>
-                                <span class="truncate">Get in Touch</span>
-                            </span>
-                            <i
-                                class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
-                        </a>
-                    </nav>
+                                <i
+                                    class="fa-solid fa-chevron-right text-[10px] text-gray-500 group-hover:text-gray-200 group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"></i>
+                            </a>
+                        </nav>
 
-                    <!-- Direct Contact Section -->
-                    <div class="w-full border-t border-brand-border/60 text-center">
-                        <!-- Header -->
-                        <!-- <div
+                        <!-- Direct Contact Section -->
+                        <div class="w-full border-t border-brand-border/60 text-center">
+                            <!-- Header -->
+                            <!-- <div
                             class="flex items-center justify-center gap-2 text-xs font-extrabold uppercase tracking-widest text-emerald-400 mb-4 px-2">
                             <i class="fa-solid fa-address-book text-sm"></i>
                             <span>Direct Contact</span>
                         </div> -->
 
-                        <!-- Email Link -->
-                        <a href="mailto:hranajit17@gmail.com"
-                            class="flex items-center justify-center gap-3 pt-2 text-gray-300 hover:text-white transition-all duration-200 group text-emerald-400">
-                            <i
-                                class="fa-solid fa-envelope text-sm group-hover:scale-105 transition-transform duration-200"></i>
-                            <span
-                                class="text-xs font-semibold tracking-wider truncate underline">hranajit17@gmail.com</span>
-                        </a>
+                            <!-- Email Link -->
+                            <a href="mailto:hranajit17@gmail.com"
+                                class="flex items-center justify-center gap-3 pt-2 text-gray-300 hover:text-white transition-all duration-200 group text-emerald-400">
+                                <i
+                                    class="fa-solid fa-envelope text-sm group-hover:scale-105 transition-transform duration-200"></i>
+                                <span
+                                    class="text-xs font-semibold tracking-wider truncate underline">hranajit17@gmail.com</span>
+                            </a>
 
-                        <!-- Phone Link -->
-                        <a href="tel:+919163760444"
-                            class="flex items-center justify-center gap-3 pt-2 text-gray-300 hover:text-white transition-all duration-200 group text-emerald-400">
-                            <i
-                                class="fa-solid fa-phone text-sm group-hover:scale-105 transition-transform duration-200"></i>
-                            <span class="text-xs font-semibold tracking-wider underline">+91 9163760444</span>
-                        </a>
+                            <!-- Phone Link -->
+                            <a href="tel:+919163760444"
+                                class="flex items-center justify-center gap-3 pt-2 text-gray-300 hover:text-white transition-all duration-200 group text-emerald-400">
+                                <i
+                                    class="fa-solid fa-phone text-sm group-hover:scale-105 transition-transform duration-200"></i>
+                                <span class="text-xs font-semibold tracking-wider underline">+91 9163760444</span>
+                            </a>
 
-                        <!-- LinkedIn Link -->
-                        <a href="https://linkedin.com/in/ranajit-hazra-1238841b2" target="_blank"
-                            class="flex items-center justify-center gap-3 pt-2 text-gray-300 hover:text-white transition-all duration-200 group text-emerald-400">
-                            <i
-                                class="bi bi-linkedin text-sm group-hover:scale-105 transition-transform duration-200"></i>
-                            <span
-                                class="text-xs font-semibold tracking-wider truncate underline">https://linkedin.com/in/ranajit-hazra-1238841b2</span>
-                        </a>
+                            <!-- LinkedIn Link -->
+                            <a href="https://linkedin.com/in/ranajit-hazra-1238841b2" target="_blank"
+                                class="flex items-center justify-center gap-3 pt-2 text-gray-300 hover:text-white transition-all duration-200 group text-emerald-400">
+                                <i
+                                    class="bi bi-linkedin text-sm group-hover:scale-105 transition-transform duration-200"></i>
+                                <span
+                                    class="text-xs font-semibold tracking-wider truncate underline">https://linkedin.com/in/ranajit-hazra-1238841b2</span>
+                            </a>
 
-                        <!-- GitHub Link -->
-                        <a href="https://github.com/Ranajit0002" target="_blank"
-                            class="flex items-center justify-center gap-3 p-2 text-gray-300 hover:text-white transition-all duration-200 group text-emerald-400">
-                            <i class="bi bi-github text-sm group-hover:scale-105 transition-transform duration-200"></i>
-                            <span
-                                class="text-xs font-semibold tracking-wider truncate underline">https://github.com/Ranajit0002</span>
-                        </a>
+                            <!-- GitHub Link -->
+                            <a href="https://github.com/Ranajit0002" target="_blank"
+                                class="flex items-center justify-center gap-3 p-2 text-gray-300 hover:text-white transition-all duration-200 group text-emerald-400">
+                                <i
+                                    class="bi bi-github text-sm group-hover:scale-105 transition-transform duration-200"></i>
+                                <span
+                                    class="text-xs font-semibold tracking-wider truncate underline">https://github.com/Ranajit0002</span>
+                            </a>
+                        </div>
+
                     </div>
-
                 </div>
             </aside>
 
