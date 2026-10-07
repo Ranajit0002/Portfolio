@@ -47,7 +47,7 @@
 <body class="bg-brand-bg text-gray-100 min-h-screen antialiased selection:bg-indigo-500 selection:text-white">
 
     <!-- Container Layout -->
-    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-6 lg:py-10">
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
             <!-- LEFT COLUMN: Sticky Sidebar Profile & Navigation -->
@@ -106,7 +106,7 @@
                             Frontend)</p>
 
                         <!-- Location & Work Preferences -->
-                        <p class="text-xs mb-5">
+                        <p class="text-xs mb-3">
                             Kolkata, West Bengal, India<br>
                             <span class="">(Open to Remote, Relocate, Hybrid, On-Site)</span>
                         </p>
@@ -394,6 +394,7 @@
                     </div>
                 </section>
 
+                <!-- Sections side by side -->
                 <div
                     class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full mx-auto divide-y lg:divide-y-0 lg:divide-x divide-brand-border/60">
 
@@ -1215,46 +1216,53 @@
                                 </div>
                             </div>
 
-                            <!-- Representational Interests Pill Badges -->
+                            <!-- Representational Interests -->
                             <div class="bg-brand-bg/50 border border-brand-border/60 p-4 flex flex-col justify-between">
                                 <h4 class="font-bold flex items-center gap-2 text-sm mb-3">
                                     <i class="fa-solid fa-heart"></i> Interests & Hobbies
                                 </h4>
 
-                                <div class="grid grid-cols-2 gap-4">
+                                <div class="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-3">
+
+                                    <!-- Interests 1 -->
                                     <div class="flex items-center gap-2.5 p-2 border border-brand-border text-gray-200">
                                         <div
-                                            class="w-8 h-8 rounded-full border border-indigo-800/50 flex items-center justify-center">
+                                            class="w-8 h-8 rounded-full border border-indigo-800/50 flex items-center justify-center shrink-0">
                                             <i class="fa-solid fa-camera"></i>
                                         </div>
-                                        <span class="font-medium">Photography</span>
+                                        <span class="font-medium whitespace-nowrap">Photography</span>
                                     </div>
 
+                                    <!-- Interests 2 -->
                                     <div class="flex items-center gap-2.5 p-2 border border-brand-border text-gray-200">
                                         <div
-                                            class="w-8 h-8 rounded-full border border-indigo-800/50 flex items-center justify-center">
+                                            class="w-8 h-8 rounded-full border border-indigo-800/50 flex items-center justify-center shrink-0">
                                             <i class="fa-solid fa-palette"></i>
                                         </div>
-                                        <span class="font-medium">Designing</span>
+                                        <span class="font-medium whitespace-nowrap">Designing</span>
                                     </div>
 
+                                    <!-- Interests 3 -->
                                     <div class="flex items-center gap-2.5 p-2 border border-brand-border text-gray-200">
                                         <div
-                                            class="w-8 h-8 rounded-full border border-indigo-800/50 flex items-center justify-center">
+                                            class="w-8 h-8 rounded-full border border-indigo-800/50 flex items-center justify-center shrink-0">
                                             <i class="fa-solid fa-code"></i>
                                         </div>
-                                        <span class="font-medium">Coding</span>
+                                        <span class="font-medium whitespace-nowrap">Coding</span>
                                     </div>
 
+                                    <!-- Interests 4 -->
                                     <div class="flex items-center gap-2.5 p-2 border border-brand-border text-gray-200">
                                         <div
-                                            class="w-8 h-8 rounded-full border border-indigo-800/50 flex items-center justify-center">
+                                            class="w-8 h-8 rounded-full border border-indigo-800/50 flex items-center justify-center shrink-0">
                                             <i class="fa-solid fa-scissors"></i>
                                         </div>
-                                        <span class="font-medium">Crafting</span>
+                                        <span class="font-medium whitespace-nowrap">Crafting</span>
                                     </div>
+
                                 </div>
                             </div>
+
                         </div>
 
                     </section>
